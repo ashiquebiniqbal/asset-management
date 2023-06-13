@@ -1,0 +1,48 @@
+<!-- checkout.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+</head>
+<body>
+    <h1>Checkout</h1>
+    <form id="payment-form">
+        <!-- Add your payment form fields here -->
+        <input type="text" name="card_number" placeholder="Card Number">
+        <input type="text" name="expiry_date" placeholder="Expiry Date">
+        <input type="text" name="cvv" placeholder="CVV">
+        <input type="hidden" id="client_secret" value="{{ client_secret }}">
+        <button type="submit">Pay Now</button>
+    </form>
+
+    <!-- Include the necessary JavaScript code to handle the payment -->
+    <script src="https://js.paymentsprovider.com/v1/pay.js"></script>
+    <script>
+        // Handle the form submission
+        document.getElementById('payment-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Retrieve the client secret
+            var clientSecret = document.getElementById('client_secret').value;
+
+            // Create a payment using the client secret
+            var payment = paymentsProvider.createPayment(clientSecret, {
+                // Add your payment details here
+                cardNumber: document.getElementById('card_number').value,
+                expiryDate: document.getElementById('expiry_date').value,
+                cvv: document.getElementById('cvv').value
+            });
+
+            // Submit the payment
+            payment.submit().then(function(result) {
+                // Handle the payment result here
+                console.log(result);
+            }).catch(function(error) {
+                // Handle any errors here
+                console.error(error);
+            });
+        });
+    </script>
+</body>
+</html>
