@@ -4,6 +4,29 @@
     <title>Home</title>
 </head>
 <body>
+    <h1>Home</h1>
+    <h2>Assets</h2>
+    <ul>
+        {% for asset in assets %}
+            <li>{{ asset }}</li>
+        {% empty %}
+            <li>No assets found</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+
+
+
+
+
+{% comment %} <!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
     <h1>Home Page</h1>
     {% if email %}
         <p>Subscribed Email: {{ email }}</p>
@@ -12,3 +35,4 @@
     <!-- Your other HTML content -->
 </body>
 </html>
+ {% endcomment %}

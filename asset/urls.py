@@ -23,6 +23,7 @@ from assets.views import home
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', home, name='home'),
+    path('', home, name='home'),
     path('assets/', include('assets.urls')),
 ]
 

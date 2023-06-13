@@ -11,14 +11,16 @@
         {% endfor %}
     </ul>
 
-    <h1>Subscribe</h1>
-    {% if email %}
-        <p>Subscribed Email: {{ email }}</p>
-    {% endif %}
-    <form method="POST" action="{% url 'assets:subscribe' %}">
+    <h2>Add Asset</h2>
+    <form method="POST" action="{% url 'assets:index' %}">
         {% csrf_token %}
-        <input type="email" name="email" placeholder="Email" required>
-        <button type="submit">Subscribe</button>
+        <input type="text" name="name" placeholder="Asset Name" required>
+        <input type="text" name="company" placeholder="Company" required>
+        <input type="text" name="employee" placeholder="Employee" required>
+        <input type="text" name="condition" placeholder="Condition" required>
+        <button type="submit">Save</button>
     </form>
+      
 </body>
 </html>
+
