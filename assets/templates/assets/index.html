@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asset Index</title>
+</head>
+<body>
+    <h1>Asset Index</h1>
+    <ul>
+        {% for asset in assets %}
+            <li>{{ asset }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Subscribe</h1>
+    {% if email %}
+        <p>Subscribed Email: {{ email }}</p>
+    {% endif %}
+    <form method="POST" action="{% url 'assets:subscribe' %}">
+        {% csrf_token %}
+        <input type="email" name="email" placeholder="Email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</body>
+</html>
