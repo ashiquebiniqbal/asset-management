@@ -39,10 +39,15 @@ This is a professional asset management application designed to help businesses 
 
 3.Create and activate a virtual environment:
 
+  Create a virtual environment
   ```bash
-    python -m venv myenv      # Create a virtual environment
-    source myenv/bin/activate   # Activate the virtual environment
-```
+    python -m venv myenv      
+  ```  
+  
+  Activate the virtual environment
+  ```bash
+    source myenv/bin/activate   
+  ```
 
 4.Install the required dependencies:
   ```bash
