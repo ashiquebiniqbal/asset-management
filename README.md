@@ -1,12 +1,12 @@
-# asset-management
+# Asset management app
 Django app to track corporate assets such as phones, tablets, laptops  and other gears handed out to employees.
 
 
-# OVERVIEW
+## OVERVIEW
 You have been hired as a developer for a new project where,
 You will write a Django app to track corporate assets such as phones, tablets, laptops 
 and other gears handed out to employees.
-# GOALS
+## GOALS
 The application might be used by several companies
 Each company might add all or some of its employees
 Each company and its staff might delegate one or more devices to employees for
@@ -14,7 +14,7 @@ a certain period of time
 Each company should be able to see when a Device was checked out and returned
 Each device should have a log of what condition it was handed out and returned
 
-# GRADING
+## GRADING
 Your ability to write readable and concise code
 Your ability to properly structure a Django project
 Your understanding of basic principles and concepts in Django / Python
@@ -27,7 +27,7 @@ Your understanding of Django REST Framework and its basic concepts
 The quality of your assumptions and the choices you make
 The amount of time You spent to solve this problem
 
-# BONUS POINTS
+## BONUS POINTS
 Tests
 Automated API documentation
 You do not need to write any code for payments or subscriptions via a third party
@@ -36,7 +36,7 @@ write some placeholder code
 Write the app so that many Phone Companies can manage their enterprise 
 subscribers
 
-# GUIDELINES
+## GUIDELINES
 You do not need to write any front-end code for this test
 The purpose of this test is not to write a fully functional web application but
 rather to see how You reason through the requirements to write the skeleton /
@@ -44,16 +44,16 @@ minimal viable code
 We believe that someone who has 1 year of experience with Django / Django REST
 Framework on a daily basis could finish this task within 3-4 hours on average
 
-# YOU ARE ALLOWED TO
+## YOU ARE ALLOWED TO
 Use any third-party open source libraries of your choice
 Re-use code that You have written yourself in other projects
 
-# YOU CAN NOT
+## YOU CAN NOT
 Use any third-party open source libraries of Your choice
 Re-use code that You have written Yourself in other projects
 
 
-# Submission and final grading
+## Submission and final grading
 Push the project to a public Github repository when done
 The timestamps and the commits will play a role in the grading
 The less time You spend and the more well composed/granular commit messages there are, the more points you will get
