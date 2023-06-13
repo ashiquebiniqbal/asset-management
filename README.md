@@ -1,90 +1,86 @@
 # Asset management app
 Django app to track corporate assets such as phones, tablets, laptops  and other gears handed out to employees.
 
+This is a professional asset management application designed to help businesses efficiently track and manage their assets. Whether it's equipment, devices, or other valuable resources, MyApp provides a centralized platform for organizations to monitor and maintain their assets, improving operational efficiency and minimizing losses.
 
-## OVERVIEW
-You have been hired as a developer for a new project where,
-You will write a Django app to track corporate assets such as phones, tablets, laptops 
-and other gears handed out to employees.
+## How to use the app
 
-## GOALS
-•The application might be used by several companies
+## Table of Contents
 
-•Each company might add all or some of its employees
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-•Each company and its staff might delegate one or more devices to employees for
-a certain period of time
+## Requirements
 
-•Each company should be able to see when a Device was checked out and returned
-
-•Each device should have a log of what condition it was handed out and returned
-
-## GRADING
-•Your ability to write readable and concise code
-
-•Your ability to properly structure a Django project
-
-•Your understanding of basic principles and concepts in Django / Python
-
-•Your ability to structure logic in coherently in a Python project
-
-•Your ability to follow and understand best practices where applicable
-
-•Your ability to convey intention via Your code and comments
-
-•Your ability to compose clear and concise Github commits
-
-•Your understanding of Django and its basic concepts
-
-•Your understanding of Django REST Framework and its basic concepts
-
-•The quality of your assumptions and the choices you make
-
-•The amount of time You spent to solve this problem
-
-## BONUS POINTS
-•Tests
-
-•Automated API documentation
-
-•You do not need to write any code for payments or subscriptions via a third party
-but it would help if You have some understanding of how those things work and
-write some placeholder code
-
-•Write the app so that many Phone Companies can manage their enterprise 
-subscribers
-
-## GUIDELINES
-•You do not need to write any front-end code for this test
-
-•The purpose of this test is not to write a fully functional web application but
-rather to see how You reason through the requirements to write the skeleton /
-minimal viable code
-
-•We believe that someone who has 1 year of experience with Django / Django REST
-
-•Framework on a daily basis could finish this task within 3-4 hours on average
-
-## YOU ARE ALLOWED TO
-•Use any third-party open source libraries of your choice
-
-•Re-use code that You have written yourself in other projects
-
-## YOU CAN NOT
-•Use any third-party open source libraries of Your choice
-
-•Re-use code that You have written Yourself in other projects
+- Python 
+- asgiref==3.7.2
+- Django==4.2.2
+- psycopg2-binary==2.9.6
+- sqlparse==0.4.4
+- tzdata==2023.3
 
 
-## Submission and final grading
-•Push the project to a public Github repository when done
+## Installation   
 
-•The timestamps and the commits will play a role in the grading
+1. Clone the repository:
 
-•The less time You spend and the more well composed/granular commit messages there are, the more points you will get
+   ```bash
+   git clone https://github.com/your-username/myapp.git
 
-•You can write a few messages in the code as comments to explain your choices and reasoning if you feel that it would make things easier for the person who is grading your code
 
-•Submit the link of your Github public repo in below submission field
+2.Navigate to the project directory:
 
-•For this submission, use the same email address you used when doing the Quiz
+ ```bash
+  cd myapp     
+```
+
+3.Create and activate a virtual environment:
+
+  ```bash
+    python -m venv myenv      # Create a virtual environment
+    source myenv/bin/activate   # Activate the virtual environment
+```
+
+4.Install the required dependencies:
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+
+## Usage
+
+### 1. Asset Inventory Management
+
+MyApp allows businesses to create a comprehensive inventory of their assets. Users can easily add new assets to the system by providing relevant details such as name, description, category, and location. The app enables efficient tracking of asset information, including purchase date, warranty status, and maintenance history.
+
+### 2. Check-in/Check-out System
+
+With MyApp, organizations can implement a streamlined check-in/check-out process for their assets. Users can easily assign assets to employees, track their location, and monitor their availability. This feature ensures accountability and reduces the risk of asset misplacement or loss.
+
+### 3. Maintenance Scheduling and Tracking
+
+MyApp simplifies asset maintenance by providing tools to schedule and track maintenance activities. Users can set up regular maintenance tasks, receive notifications for upcoming or overdue maintenance, and track the history of maintenance performed on each asset. This proactive approach helps extend asset lifespan and ensures optimal performance.
+
+### 4. Reporting and Analytics
+
+The app offers powerful reporting and analytics capabilities, allowing users to generate custom reports based on various asset attributes. Whether it's asset utilization, maintenance costs, or depreciation analysis, MyApp provides valuable insights that assist in making informed decisions regarding asset management and resource allocation.
+
+### 5. User Collaboration and Access Control
+
+MyApp supports multiple user accounts with different access levels, ensuring secure collaboration and data integrity. Administrators can assign appropriate permissions to different user roles, allowing teams to collaborate on asset management tasks while maintaining data confidentiality and integrity.
+
+## Installation and Usage
+
+For detailed instructions on how to install and use MyApp, please refer to the [Installation](#installation) and [Usage](#usage) sections in the [README.md](README.md) file.
+
+## Contributing
+
+We welcome contributions from the community to enhance MyApp. If you would like to contribute, please follow the guidelines outlined in the [Contributing](#contributing) section of the [README.md](README.md) file.
+
+## License
+
+MyApp is released under the [MIT License](LICENSE).
+
