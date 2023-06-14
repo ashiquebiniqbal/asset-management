@@ -28,13 +28,13 @@ This is a professional asset management application designed to help businesses 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/myapp.git
+   git clone https://github.com/ashiquebiniqbal/asset-management.git
 
 
 2.Navigate to the project directory:
 
  ```bash
-  cd myapp     
+  cd asset    
 ```
 
 3.Create and activate a virtual environment:
